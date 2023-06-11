@@ -1,0 +1,30 @@
+name: Build App using PNPM
+
+on:
+  push:
+    branches:
+      - main
+      - maintenance/workflows
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: [ubuntu-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install PNPM
+        run: |
+          npm install -g pnpm
+
+      - name: Install app dependencies
+        run: |
+          pnpm install
+
+      - name: Build app
+        run: |
+          pnpm build
