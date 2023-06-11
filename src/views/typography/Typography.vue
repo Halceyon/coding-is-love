@@ -13,13 +13,13 @@
 </template>
 
 <script>
-import TypographyHeadlines from './TypographyHeadlines.vue'
-import TypographyTexts from './TypographyTexts.vue'
+import TypographyHeadlines from './TypographyHeadlines.vue';
+import TypographyTexts from './TypographyTexts.vue';
 
 export default {
   components: {
     TypographyHeadlines,
     TypographyTexts,
   },
-}
+};
 </script>

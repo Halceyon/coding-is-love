@@ -110,17 +110,17 @@
 
 <script>
 // eslint-disable-next-line object-curly-newline
-import { mdiPoll, mdiLabelVariantOutline, mdiCurrencyUsd, mdiHelpCircleOutline } from '@mdi/js'
-import StatisticsCardVertical from '@/components/statistics-card/StatisticsCardVertical.vue'
+import { mdiPoll, mdiLabelVariantOutline, mdiCurrencyUsd, mdiHelpCircleOutline } from '@mdi/js';
+import StatisticsCardVertical from '@/components/statistics-card/StatisticsCardVertical.vue';
 
 // demos
-import DashboardCongratulationJohn from './DashboardCongratulationJohn.vue'
-import DashboardStatisticsCard from './DashboardStatisticsCard.vue'
-import DashboardCardTotalEarning from './DashboardCardTotalEarning.vue'
-import DashboardCardDepositAndWithdraw from './DashboardCardDepositAndWithdraw.vue'
-import DashboardCardSalesByCountries from './DashboardCardSalesByCountries.vue'
-import DashboardWeeklyOverview from './DashboardWeeklyOverview.vue'
-import DashboardDatatable from './DashboardDatatable.vue'
+import DashboardCongratulationJohn from './DashboardCongratulationJohn.vue';
+import DashboardStatisticsCard from './DashboardStatisticsCard.vue';
+import DashboardCardTotalEarning from './DashboardCardTotalEarning.vue';
+import DashboardCardDepositAndWithdraw from './DashboardCardDepositAndWithdraw.vue';
+import DashboardCardSalesByCountries from './DashboardCardSalesByCountries.vue';
+import DashboardWeeklyOverview from './DashboardWeeklyOverview.vue';
+import DashboardDatatable from './DashboardDatatable.vue';
 
 export default {
   components: {
@@ -141,7 +141,7 @@ export default {
       subtitle: 'Weekly Project',
       statistics: '$25.6k',
       change: '+42%',
-    }
+    };
 
     const totalSales = {
       statTitle: 'Refunds',
@@ -150,7 +150,7 @@ export default {
       subtitle: 'Past Month',
       statistics: '$78',
       change: '-15%',
-    }
+    };
 
     // vertical card options
     const newProject = {
@@ -160,7 +160,7 @@ export default {
       subtitle: 'Yearly Project',
       statistics: '862',
       change: '-18%',
-    }
+    };
 
     const salesQueries = {
       statTitle: 'Sales Quries',
@@ -169,14 +169,14 @@ export default {
       subtitle: 'Last week',
       statistics: '15',
       change: '-18%',
-    }
+    };
 
     return {
       totalProfit,
       totalSales,
       newProject,
       salesQueries,
-    }
+    };
   },
-}
+};
 </script>

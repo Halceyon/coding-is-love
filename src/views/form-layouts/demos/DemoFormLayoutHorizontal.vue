@@ -119,15 +119,15 @@
 </template>
 
 <script>
-import { ref } from '@vue/composition-api'
+import { ref } from 'vue';
 
 export default {
   setup() {
-    const firstname = ref('')
-    const email = ref('')
-    const mobile = ref()
-    const password = ref()
-    const checkbox = ref(false)
+    const firstname = ref('');
+    const email = ref('');
+    const mobile = ref();
+    const password = ref();
+    const checkbox = ref(false);
 
     return {
       firstname,
@@ -135,7 +135,7 @@ export default {
       mobile,
       password,
       checkbox,
-    }
+    };
   },
-}
+};
 </script>

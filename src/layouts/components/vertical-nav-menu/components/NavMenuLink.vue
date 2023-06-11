@@ -6,7 +6,7 @@
   >
     <v-list-item-icon>
       <v-icon
-        :class="{'alternate-icon-small': !icon}"
+        :class="{ 'alternate-icon-small': !icon }"
         class="mx-auto"
       >
         {{ icon || alternateIcon }}
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { mdiCheckboxBlankCircleOutline } from '@mdi/js'
+import { mdiCheckboxBlankCircleOutline } from '@mdi/js';
 
 export default {
   props: {
@@ -36,9 +36,9 @@ export default {
   setup() {
     return {
       alternateIcon: mdiCheckboxBlankCircleOutline,
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

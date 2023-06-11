@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { mdiWeatherNight, mdiWeatherSunny } from '@mdi/js'
+import { mdiWeatherNight, mdiWeatherSunny } from '@mdi/js';
 
 export default {
   setup() {
@@ -19,9 +19,9 @@ export default {
         mdiWeatherNight,
         mdiWeatherSunny,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style>

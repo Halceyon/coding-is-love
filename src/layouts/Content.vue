@@ -97,11 +97,11 @@
 </template>
 
 <script>
-import { ref } from '@vue/composition-api'
-import { mdiMagnify, mdiBellOutline, mdiGithub } from '@mdi/js'
-import VerticalNavMenu from './components/vertical-nav-menu/VerticalNavMenu.vue'
-import ThemeSwitcher from './components/ThemeSwitcher.vue'
-import AppBarUserMenu from './components/AppBarUserMenu.vue'
+import { ref } from 'vue';
+import { mdiMagnify, mdiBellOutline, mdiGithub } from '@mdi/js';
+import VerticalNavMenu from './components/vertical-nav-menu/VerticalNavMenu.vue';
+import ThemeSwitcher from './components/ThemeSwitcher.vue';
+import AppBarUserMenu from './components/AppBarUserMenu.vue';
 
 export default {
   components: {
@@ -110,7 +110,7 @@ export default {
     AppBarUserMenu,
   },
   setup() {
-    const isDrawerOpen = ref(null)
+    const isDrawerOpen = ref(null);
 
     return {
       isDrawerOpen,
@@ -121,9 +121,9 @@ export default {
         mdiBellOutline,
         mdiGithub,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

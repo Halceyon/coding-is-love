@@ -3,7 +3,7 @@
     height="250"
     fixed-header
   >
-    <template v-slot:default>
+    <template #default>
       <thead>
         <tr>
           <th class="text-uppercase">
@@ -86,11 +86,11 @@ export default {
         carbs: 24,
         protein: 4,
       },
-    ]
+    ];
 
     return {
       desserts,
-    }
+    };
   },
-}
+};
 </script>

@@ -87,9 +87,9 @@ export default {
       tab2: null,
       items: ['ITEM ONE', 'ITEM TWO', 'ITEM THREE'],
       text: 'Although cards can support multiple actions, UI controls, and an overflow menu, use restraint and remember that cards…',
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

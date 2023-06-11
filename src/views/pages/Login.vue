@@ -88,7 +88,7 @@
           <span class="me-2">
             New on our platform?
           </span>
-          <router-link :to="{name:'pages-register'}">
+          <router-link :to="{ name: 'pages-register' }">
             Create an account
           </router-link>
         </v-card-text>
@@ -120,7 +120,7 @@
     <img
       class="auth-mask-bg"
       height="173"
-      :src="require(`@/assets/images/misc/mask-${$vuetify.theme.dark ? 'dark':'light'}.png`)"
+      :src="require(`@/assets/images/misc/mask-${$vuetify.theme.dark ? 'dark' : 'light'}.png`)"
     >
 
     <!-- tree -->
@@ -143,14 +143,14 @@
 
 <script>
 // eslint-disable-next-line object-curly-newline
-import { mdiFacebook, mdiTwitter, mdiGithub, mdiGoogle, mdiEyeOutline, mdiEyeOffOutline } from '@mdi/js'
-import { ref } from '@vue/composition-api'
+import { mdiFacebook, mdiTwitter, mdiGithub, mdiGoogle, mdiEyeOutline, mdiEyeOffOutline } from '@mdi/js';
+import { ref } from 'vue';
 
 export default {
   setup() {
-    const isPasswordVisible = ref(false)
-    const email = ref('')
-    const password = ref('')
+    const isPasswordVisible = ref(false);
+    const email = ref('');
+    const password = ref('');
     const socialLink = [
       {
         icon: mdiFacebook,
@@ -172,7 +172,7 @@ export default {
         color: '#db4437',
         colorInDark: '#db4437',
       },
-    ]
+    ];
 
     return {
       isPasswordVisible,
@@ -184,9 +184,9 @@ export default {
         mdiEyeOutline,
         mdiEyeOffOutline,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss">

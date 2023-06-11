@@ -19,9 +19,9 @@
     <v-card-text>
       <v-list class="pb-0">
         <v-list-item
-          v-for="(data,index) in salesByCountries"
+          v-for="(data, index) in salesByCountries"
           :key="data.country"
-          :class="`d-flex align-center px-0 ${index > 0 ? 'mt-4':''}`"
+          :class="`d-flex align-center px-0 ${index > 0 ? 'mt-4' : ''}`"
         >
           <v-avatar
             :color="data.color"
@@ -38,12 +38,12 @@
 
                 <v-icon
                   size="20"
-                  :color="data.change.charAt(0) === '+' ? 'success':'error'"
+                  :color="data.change.charAt(0) === '+' ? 'success' : 'error'"
                 >
-                  {{ data.change.charAt(0) === '+' ? icons.mdiChevronUp: icons.mdiChevronDown }}
+                  {{ data.change.charAt(0) === '+' ? icons.mdiChevronUp : icons.mdiChevronDown }}
                 </v-icon>
 
-                <span :class="`text-xs ${data.change.charAt(0) === '+' ? 'success--text':'error--text'}`">{{ data.change.slice(1) }}</span>
+                <span :class="`text-xs ${data.change.charAt(0) === '+' ? 'success--text' : 'error--text'}`">{{ data.change.slice(1) }}</span>
               </div>
 
               <v-list-item-subtitle class="text-xs">
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-import { mdiDotsVertical, mdiChevronUp, mdiChevronDown } from '@mdi/js'
+import { mdiDotsVertical, mdiChevronUp, mdiChevronDown } from '@mdi/js';
 
 export default {
   setup() {
@@ -112,7 +112,7 @@ export default {
         sales: '42k',
         color: 'error',
       },
-    ]
+    ];
 
     return {
       salesByCountries,
@@ -121,7 +121,7 @@ export default {
         mdiChevronUp,
         mdiChevronDown,
       },
-    }
+    };
   },
-}
+};
 </script>

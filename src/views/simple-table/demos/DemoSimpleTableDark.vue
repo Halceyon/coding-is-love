@@ -1,6 +1,6 @@
 <template>
   <v-simple-table dark>
-    <template v-slot:default>
+    <template #default>
       <thead>
         <tr>
           <th class="text-uppercase text--primary">
@@ -83,11 +83,11 @@ export default {
         carbs: 24,
         protein: 4,
       },
-    ]
+    ];
 
     return {
       desserts,
-    }
+    };
   },
-}
+};
 </script>

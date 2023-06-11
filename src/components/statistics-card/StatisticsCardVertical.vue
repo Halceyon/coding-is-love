@@ -36,7 +36,7 @@
         <span class="font-weight-semibold text-2xl me-1 mb-2">{{ statistics }}</span>
         <span
           class="percentage text-xs mb-2"
-          :class="checkChange(change) ? 'success--text':'error--text'"
+          :class="checkChange(change) ? 'success--text' : 'error--text'"
         > {{ change }}</span>
       </div>
       <p class="text-xs text--secondary mb-0">
@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import { mdiDotsVertical } from '@mdi/js'
+import { mdiDotsVertical } from '@mdi/js';
 
 export default {
   props: {
@@ -60,20 +60,20 @@ export default {
   },
   setup() {
     const checkChange = value => {
-      const firstChar = value.charAt(0)
+      const firstChar = value.charAt(0);
       if (firstChar === '+') {
-        return true
+        return true;
       }
 
-      return false
-    }
+      return false;
+    };
 
     return {
       mdiDotsVertical,
       checkChange,
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

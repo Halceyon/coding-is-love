@@ -44,7 +44,7 @@
       ></nav-menu-link>
       <nav-menu-link
         title="Account Settings"
-        :to="{ name: 'pages-account-settings'}"
+        :to="{ name: 'pages-account-settings' }"
         :icon="icons.mdiAccountCogOutline"
       ></nav-menu-link>
       <nav-menu-group
@@ -121,10 +121,10 @@ import {
   mdiFileOutline,
   mdiFormSelect,
   mdiAccountCogOutline,
-} from '@mdi/js'
-import NavMenuSectionTitle from './components/NavMenuSectionTitle.vue'
-import NavMenuGroup from './components/NavMenuGroup.vue'
-import NavMenuLink from './components/NavMenuLink.vue'
+} from '@mdi/js';
+import NavMenuSectionTitle from './components/NavMenuSectionTitle.vue';
+import NavMenuGroup from './components/NavMenuGroup.vue';
+import NavMenuLink from './components/NavMenuLink.vue';
 
 export default {
   components: {
@@ -150,9 +150,9 @@ export default {
         mdiFormSelect,
         mdiAccountCogOutline,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

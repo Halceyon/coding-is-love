@@ -37,13 +37,13 @@
 </template>
 
 <script>
-import { mdiAccountOutline, mdiLockOpenOutline, mdiInformationOutline } from '@mdi/js'
-import { ref } from '@vue/composition-api'
+import { mdiAccountOutline, mdiLockOpenOutline, mdiInformationOutline } from '@mdi/js';
+import { ref } from 'vue';
 
 // demos
-import AccountSettingsAccount from './AccountSettingsAccount.vue'
-import AccountSettingsSecurity from './AccountSettingsSecurity.vue'
-import AccountSettingsInfo from './AccountSettingsInfo.vue'
+import AccountSettingsAccount from './AccountSettingsAccount.vue';
+import AccountSettingsSecurity from './AccountSettingsSecurity.vue';
+import AccountSettingsInfo from './AccountSettingsInfo.vue';
 
 export default {
   components: {
@@ -52,14 +52,14 @@ export default {
     AccountSettingsInfo,
   },
   setup() {
-    const tab = ref('')
+    const tab = ref('');
 
     // tabs
     const tabs = [
       { title: 'Account', icon: mdiAccountOutline },
       { title: 'Security', icon: mdiLockOpenOutline },
       { title: 'Info', icon: mdiInformationOutline },
-    ]
+    ];
 
     // account settings data
     const accountSettingData = {
@@ -81,7 +81,7 @@ export default {
         languages: ['English', 'Spanish'],
         gender: 'male',
       },
-    }
+    };
 
     return {
       tab,
@@ -92,7 +92,7 @@ export default {
         mdiLockOpenOutline,
         mdiInformationOutline,
       },
-    }
+    };
   },
-}
+};
 </script>

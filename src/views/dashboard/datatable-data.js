@@ -103,6 +103,6 @@ const data = [
     experience: '2 Years',
     status: 2,
   },
-]
+];
 
-export default data
+export default data;

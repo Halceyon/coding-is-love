@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { mdiAlert } from '@mdi/js'
+import { mdiAlert } from '@mdi/js';
 
 export default {
   setup() {
@@ -49,9 +49,9 @@ export default {
       icons: {
         mdiAlert,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss">
