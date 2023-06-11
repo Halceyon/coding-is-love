@@ -3,23 +3,11 @@ A landing page for developers.
 
 ## 📚 Table of Contents
 
-- [Getting Started](#getting-started)
-- [Features](#features)
 - [Installation](#installation)
+- [Features](#features)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
-
-## 🚀 Getting Started
-
-This project is aimed at simplifying your development workflow by providing you with easy-to-integrate widgets.
-
-## 🌟 Features
-
-- **GitHub Issues**: Track and manage issues directly from your landing page.
-
-- **Microsoft ToDo tasks**: Sync your Microsoft ToDo tasks directly to your project.
-
 
 ## 🛠 Installation
 
@@ -32,6 +20,13 @@ pnpm install
 ```js
 pnpm run dev
 ```
+
+## 🌟 Features
+
+- **GitHub Issues**: Track and manage issues directly from your landing page.
+
+- **Microsoft ToDo tasks**: Sync your Microsoft ToDo tasks directly to your project.
+
 
 ♥ Contributing
 Any contributions you make are greatly appreciated. Follow the steps below to contribute:

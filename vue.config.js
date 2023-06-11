@@ -18,5 +18,27 @@ module.exports = {
         .use('sass-loader')
         .tap(opt => mergeSassVariables(opt, "'@/styles/variables.scss';"))
     })
+    config.plugin('happypack')
+      .use(require('happypack'), [{
+        id: 'js',
+        threads: 8,
+        loaders: ['babel-loader'],
+      }, {
+        id: 'css',
+        threads: 8,
+        loaders: ['css-loader'],
+      }, {
+        id: 'scss',
+        threads: 8,
+        loaders: ['css-loader', 'sass-loader'],
+      }, {
+        id: 'sass',
+        threads: 8,
+        loaders: ['css-loader', 'sass-loader?indentedSyntax'],
+      }, {
+        id: 'ts',
+        threads: 8,
+        loaders: ['ts-loader'],
+      }]);
   },
 }
