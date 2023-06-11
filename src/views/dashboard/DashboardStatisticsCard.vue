@@ -30,7 +30,7 @@
         >
           <v-avatar
             size="44"
-            :color="resolveStatisticsIconVariation (data.title).color"
+            :color="resolveStatisticsIconVariation(data.title).color"
             rounded
             class="elevation-1"
           >
@@ -39,7 +39,7 @@
               color="white"
               size="30"
             >
-              {{ resolveStatisticsIconVariation (data.title).icon }}
+              {{ resolveStatisticsIconVariation(data.title).icon }}
             </v-icon>
           </v-avatar>
           <div class="ms-3">
@@ -58,7 +58,7 @@
 
 <script>
 // eslint-disable-next-line object-curly-newline
-import { mdiAccountOutline, mdiCurrencyUsd, mdiTrendingUp, mdiDotsVertical, mdiLabelOutline } from '@mdi/js'
+import { mdiAccountOutline, mdiCurrencyUsd, mdiTrendingUp, mdiDotsVertical, mdiLabelOutline } from '@mdi/js';
 
 export default {
   setup() {
@@ -79,16 +79,16 @@ export default {
         title: 'Revenue',
         total: '$88k',
       },
-    ]
+    ];
 
     const resolveStatisticsIconVariation = data => {
-      if (data === 'Sales') return { icon: mdiTrendingUp, color: 'primary' }
-      if (data === 'Customers') return { icon: mdiAccountOutline, color: 'success' }
-      if (data === 'Product') return { icon: mdiLabelOutline, color: 'warning' }
-      if (data === 'Revenue') return { icon: mdiCurrencyUsd, color: 'info' }
+      if (data === 'Sales') return { icon: mdiTrendingUp, color: 'primary' };
+      if (data === 'Customers') return { icon: mdiAccountOutline, color: 'success' };
+      if (data === 'Product') return { icon: mdiLabelOutline, color: 'warning' };
+      if (data === 'Revenue') return { icon: mdiCurrencyUsd, color: 'info' };
 
-      return { icon: mdiAccountOutline, color: 'success' }
-    }
+      return { icon: mdiAccountOutline, color: 'success' };
+    };
 
     return {
       statisticsData,
@@ -102,7 +102,7 @@ export default {
         mdiLabelOutline,
         mdiCurrencyUsd,
       },
-    }
+    };
   },
-}
+};
 </script>

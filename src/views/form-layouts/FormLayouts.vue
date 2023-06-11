@@ -65,11 +65,11 @@
 </template>
 
 <script>
-import DemoFormLayoutHorizontal from './demos/DemoFormLayoutHorizontal.vue'
-import DemoFormLayoutHorizontalIcon from './demos/DemoFormLayoutHorizontalIcon.vue'
-import DemoFormLayoutVerticalForm from './demos/DemoFormLayoutVerticalForm.vue'
-import DemoFormLayoutVerticalFormWithIcons from './demos/DemoFormLayoutVerticalFormWithIcons.vue'
-import DemoFormLayoutMultipleColumn from './demos/DemoFormLayoutMultipleColumn.vue'
+import DemoFormLayoutHorizontal from './demos/DemoFormLayoutHorizontal.vue';
+import DemoFormLayoutHorizontalIcon from './demos/DemoFormLayoutHorizontalIcon.vue';
+import DemoFormLayoutVerticalForm from './demos/DemoFormLayoutVerticalForm.vue';
+import DemoFormLayoutVerticalFormWithIcons from './demos/DemoFormLayoutVerticalFormWithIcons.vue';
+import DemoFormLayoutMultipleColumn from './demos/DemoFormLayoutMultipleColumn.vue';
 
 export default {
   components: {
@@ -80,7 +80,7 @@ export default {
     DemoFormLayoutMultipleColumn,
   },
   setup() {
-    return {}
+    return {};
   },
-}
+};
 </script>

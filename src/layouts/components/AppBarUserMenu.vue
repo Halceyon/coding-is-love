@@ -6,7 +6,7 @@
     min-width="230"
     content-class="user-profile-menu-content"
   >
-    <template v-slot:activator="{ on, attrs }">
+    <template #activator="{ on, attrs }">
       <v-badge
         bottom
         color="success"
@@ -163,7 +163,7 @@ import {
   mdiCurrencyUsd,
   mdiHelpCircleOutline,
   mdiLogoutVariant,
-} from '@mdi/js'
+} from '@mdi/js';
 
 export default {
   setup() {
@@ -178,9 +178,9 @@ export default {
         mdiHelpCircleOutline,
         mdiLogoutVariant,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss">

@@ -16,7 +16,7 @@
               <v-text-field
                 v-model="currentPassword"
                 :type="isCurrentPasswordVisible ? 'text' : 'password'"
-                :append-icon="isCurrentPasswordVisible ? icons.mdiEyeOffOutline:icons.mdiEyeOutline"
+                :append-icon="isCurrentPasswordVisible ? icons.mdiEyeOffOutline : icons.mdiEyeOutline"
                 label="Current Password"
                 outlined
                 dense
@@ -27,7 +27,7 @@
               <v-text-field
                 v-model="newPassword"
                 :type="isNewPasswordVisible ? 'text' : 'password'"
-                :append-icon="isNewPasswordVisible ? icons.mdiEyeOffOutline:icons.mdiEyeOutline"
+                :append-icon="isNewPasswordVisible ? icons.mdiEyeOffOutline : icons.mdiEyeOutline"
                 label="New Password"
                 outlined
                 dense
@@ -40,7 +40,7 @@
               <v-text-field
                 v-model="cPassword"
                 :type="isCPasswordVisible ? 'text' : 'password'"
-                :append-icon="isCPasswordVisible ? icons.mdiEyeOffOutline:icons.mdiEyeOutline"
+                :append-icon="isCPasswordVisible ? icons.mdiEyeOffOutline : icons.mdiEyeOutline"
                 label="Confirm New Password"
                 outlined
                 dense
@@ -123,17 +123,17 @@
 
 <script>
 // eslint-disable-next-line object-curly-newline
-import { mdiKeyOutline, mdiLockOpenOutline, mdiEyeOffOutline, mdiEyeOutline } from '@mdi/js'
-import { ref } from 'vue'
+import { mdiKeyOutline, mdiLockOpenOutline, mdiEyeOffOutline, mdiEyeOutline } from '@mdi/js';
+import { ref } from 'vue';
 
 export default {
   setup() {
-    const isCurrentPasswordVisible = ref(false)
-    const isNewPasswordVisible = ref(false)
-    const isCPasswordVisible = ref(false)
-    const currentPassword = ref('12345678')
-    const newPassword = ref('87654321')
-    const cPassword = ref('87654321')
+    const isCurrentPasswordVisible = ref(false);
+    const isNewPasswordVisible = ref(false);
+    const isCPasswordVisible = ref(false);
+    const currentPassword = ref('12345678');
+    const newPassword = ref('87654321');
+    const cPassword = ref('87654321');
 
     return {
       isCurrentPasswordVisible,
@@ -148,9 +148,9 @@ export default {
         mdiEyeOffOutline,
         mdiEyeOutline,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

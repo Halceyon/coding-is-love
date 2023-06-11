@@ -60,7 +60,7 @@
 
 <script>
 // eslint-disable-next-line object-curly-newline
-import { mdiTwitter, mdiHeart, mdiShareVariant, mdiFacebook, mdiLinkedin } from '@mdi/js'
+import { mdiTwitter, mdiHeart, mdiShareVariant, mdiFacebook, mdiLinkedin } from '@mdi/js';
 
 export default {
   setup() {
@@ -95,7 +95,7 @@ export default {
         likes: '1.2k',
         share: '80',
       },
-    ]
+    ];
 
     return {
       solidCardData,
@@ -104,7 +104,7 @@ export default {
         mdiHeart,
         mdiShareVariant,
       },
-    }
+    };
   },
-}
+};
 </script>

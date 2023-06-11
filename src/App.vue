@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import { computed } from 'vue'
-import { useRouter } from '@/utils'
-import LayoutBlank from '@/layouts/Blank.vue'
-import LayoutContent from '@/layouts/Content.vue'
+import { computed } from 'vue';
+import { useRouter } from '@/utils';
+import LayoutBlank from '@/layouts/Blank.vue';
+import LayoutContent from '@/layouts/Content.vue';
 
 export default {
   components: {
@@ -16,20 +16,20 @@ export default {
     LayoutContent,
   },
   setup() {
-    const { route } = useRouter()
+    const { route } = useRouter();
 
     const resolveLayout = computed(() => {
       // Handles initial route
-      if (route.value.name === null) return null
+      if (route.value.name === null) return null;
 
-      if (route.value.meta.layout === 'blank') return 'layout-blank'
+      if (route.value.meta.layout === 'blank') return 'layout-blank';
 
-      return 'layout-content'
-    })
+      return 'layout-content';
+    });
 
     return {
       resolveLayout,
-    }
+    };
   },
-}
+};
 </script>

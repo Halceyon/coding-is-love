@@ -56,11 +56,11 @@
 </template>
 
 <script>
-import DemoSimpleTableBasic from './demos/DemoSimpleTableBasic.vue'
-import DemoSimpleTableDark from './demos/DemoSimpleTableDark.vue'
-import DemoSimpleTableDense from './demos/DemoSimpleTableDense.vue'
-import DemoSimpleTableHeight from './demos/DemoSimpleTableHeight.vue'
-import DemoSimpleTableFixedHeader from './demos/DemoSimpleTableFixedHeader.vue'
+import DemoSimpleTableBasic from './demos/DemoSimpleTableBasic.vue';
+import DemoSimpleTableDark from './demos/DemoSimpleTableDark.vue';
+import DemoSimpleTableDense from './demos/DemoSimpleTableDense.vue';
+import DemoSimpleTableHeight from './demos/DemoSimpleTableHeight.vue';
+import DemoSimpleTableFixedHeader from './demos/DemoSimpleTableFixedHeader.vue';
 
 export default {
   components: {
@@ -71,7 +71,7 @@ export default {
     DemoSimpleTableFixedHeader,
   },
   setup() {
-    return {}
+    return {};
   },
-}
+};
 </script>

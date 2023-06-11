@@ -11,9 +11,9 @@
         <v-card-text>
           <v-list>
             <v-list-item
-              v-for="(data,index) in deposit"
+              v-for="(data, index) in deposit"
               :key="data.img"
-              :class="`d-flex px-0 ${index > 0 ? 'mt-4':''}`"
+              :class="`d-flex px-0 ${index > 0 ? 'mt-4' : ''}`"
             >
               <v-img
                 contain
@@ -53,9 +53,9 @@
         <v-card-text>
           <v-list>
             <v-list-item
-              v-for="(data,index) in withdraw"
+              v-for="(data, index) in withdraw"
               :key="data.img"
-              :class="`d-flex px-0 ${index > 0 ? 'mt-4':''}`"
+              :class="`d-flex px-0 ${index > 0 ? 'mt-4' : ''}`"
             >
               <v-img
                 max-height="30"
@@ -116,7 +116,7 @@ export default {
         subtitle: 'Wallet deposit',
         amount: '+$446',
       },
-    ]
+    ];
     const withdraw = [
       {
         img: require('@/assets/images/logos/google.png'),
@@ -148,12 +148,12 @@ export default {
         subtitle: 'Choosing a Cloud Platform',
         amount: '-$21',
       },
-    ]
+    ];
 
     return {
       deposit,
       withdraw,
-    }
+    };
   },
-}
+};
 </script>

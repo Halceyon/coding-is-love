@@ -44,19 +44,19 @@
 </template>
 
 <script>
-import VueApexCharts from 'vue-apexcharts'
+import VueApexCharts from 'vue-apexcharts';
 // eslint-disable-next-line object-curly-newline
-import { mdiDotsVertical, mdiTrendingUp, mdiCurrencyUsd } from '@mdi/js'
-import { getCurrentInstance } from 'vue'
+import { mdiDotsVertical, mdiTrendingUp, mdiCurrencyUsd } from '@mdi/js';
+import { getCurrentInstance } from 'vue';
 
 export default {
   components: {
     VueApexCharts,
   },
   setup() {
-    const ins = getCurrentInstance()?.proxy
-    const $vuetify = ins && ins.$vuetify ? ins.$vuetify : null
-    const customChartColor = $vuetify.theme.isDark ? '#3b3559' : '#f5f5f5'
+    const ins = getCurrentInstance()?.proxy;
+    const $vuetify = ins && ins.$vuetify ? ins.$vuetify : null;
+    const customChartColor = $vuetify.theme.isDark ? '#3b3559' : '#f5f5f5';
 
     const chartOptions = {
       colors: [
@@ -123,13 +123,13 @@ export default {
           right: 0,
         },
       },
-    }
+    };
 
     const chartData = [
       {
         data: [40, 60, 50, 60, 75, 60, 50, 65],
       },
-    ]
+    ];
 
     return {
       chartOptions,
@@ -140,7 +140,7 @@ export default {
         mdiTrendingUp,
         mdiCurrencyUsd,
       },
-    }
+    };
   },
-}
+};
 </script>

@@ -21,9 +21,9 @@
 </template>
 
 <script>
-import CardBasic from './CardBasic.vue'
-import CardNavigation from './CardNavigation.vue'
-import CardSolid from './CardSolid.vue'
+import CardBasic from './CardBasic.vue';
+import CardNavigation from './CardNavigation.vue';
+import CardSolid from './CardSolid.vue';
 
 export default {
   components: {
@@ -31,5 +31,5 @@ export default {
     CardNavigation,
     CardSolid,
   },
-}
+};
 </script>

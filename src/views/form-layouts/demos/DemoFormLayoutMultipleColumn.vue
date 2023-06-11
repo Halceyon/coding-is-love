@@ -111,17 +111,17 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 export default {
   setup() {
-    const firstName = ref('')
-    const lastName = ref('')
-    const city = ref('')
-    const country = ref('')
-    const company = ref('')
-    const email = ref('')
-    const checkbox = ref(false)
+    const firstName = ref('');
+    const lastName = ref('');
+    const city = ref('');
+    const country = ref('');
+    const company = ref('');
+    const email = ref('');
+    const checkbox = ref(false);
 
     return {
       firstName,
@@ -131,7 +131,7 @@ export default {
       company,
       email,
       checkbox,
-    }
+    };
   },
-}
+};
 </script>

@@ -172,8 +172,8 @@
 </template>
 
 <script>
-import { mdiAlertOutline, mdiCloudUploadOutline } from '@mdi/js'
-import { ref } from 'vue'
+import { mdiAlertOutline, mdiCloudUploadOutline } from '@mdi/js';
+import { ref } from 'vue';
 
 export default {
   props: {
@@ -183,13 +183,13 @@ export default {
     },
   },
   setup(props) {
-    const status = ['Active', 'Inactive', 'Pending', 'Closed']
+    const status = ['Active', 'Inactive', 'Pending', 'Closed'];
 
-    const accountDataLocale = ref(JSON.parse(JSON.stringify(props.accountData)))
+    const accountDataLocale = ref(JSON.parse(JSON.stringify(props.accountData)));
 
     const resetForm = () => {
-      accountDataLocale.value = JSON.parse(JSON.stringify(props.accountData))
-    }
+      accountDataLocale.value = JSON.parse(JSON.stringify(props.accountData));
+    };
 
     return {
       status,
@@ -199,7 +199,7 @@ export default {
         mdiAlertOutline,
         mdiCloudUploadOutline,
       },
-    }
+    };
   },
-}
+};
 </script>

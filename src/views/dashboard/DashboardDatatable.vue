@@ -9,17 +9,17 @@
       disable-sort
     >
       <!-- name -->
-      <template #[`item.full_name`]="{item}">
+      <template #[`item.full_name`]="{ item }">
         <div class="d-flex flex-column">
           <span class="d-block font-weight-semibold text--primary text-truncate">{{ item.full_name }}</span>
           <small>{{ item.post }}</small>
         </div>
       </template>
-      <template #[`item.salary`]="{item}">
+      <template #[`item.salary`]="{ item }">
         {{ `$${item.salary}` }}
       </template>
       <!-- status -->
-      <template #[`item.status`]="{item}">
+      <template #[`item.status`]="{ item }">
         <v-chip
           small
           :color="statusColor[status[item.status]]"
@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import { mdiSquareEditOutline, mdiDotsVertical } from '@mdi/js'
-import data from './datatable-data'
+import { mdiSquareEditOutline, mdiDotsVertical } from '@mdi/js';
+import data from './datatable-data';
 
 export default {
   setup() {
@@ -46,7 +46,7 @@ export default {
       Resigned: 'warning',
       Applied: 'info',
       /* eslint-enable key-spacing */
-    }
+    };
 
     return {
       headers: [
@@ -72,7 +72,7 @@ export default {
         mdiSquareEditOutline,
         mdiDotsVertical,
       },
-    }
+    };
   },
-}
+};
 </script>

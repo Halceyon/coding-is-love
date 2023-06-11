@@ -6,7 +6,7 @@
         :key="item.icon"
         top
       >
-        <template v-slot:activator="{ on, attrs }">
+        <template #activator="{ on, attrs }">
           <v-card
             v-bind="attrs"
             class="icons-card mb-6 me-6"
@@ -90,7 +90,7 @@ import {
   mdiEmoticonHappyOutline,
   mdiFileMultipleOutline,
   mdiFlaskEmptyOutline,
-} from '@mdi/js'
+} from '@mdi/js';
 
 export default {
   setup() {
@@ -146,14 +146,14 @@ export default {
       { icon: mdiEmoticonHappyOutline, name: 'mdiEmoticonHappyOutline' },
       { icon: mdiFileMultipleOutline, name: 'mdiFileMultipleOutline' },
       { icon: mdiFlaskEmptyOutline, name: 'mdiFlaskEmptyOutline' },
-    ]
+    ];
 
     return {
       iconsList,
       icons: {
         mdiMagnify,
       },
-    }
+    };
   },
-}
+};
 </script>

@@ -198,9 +198,9 @@
             <div class="pa-4">
               <v-img
                 src="@/assets/images/pages/card-basic-clock.jpg"
-                :class="$vuetify.breakpoint.mdAndUp ? 'rounded-lg':'rounded-0'"
+                :class="$vuetify.breakpoint.mdAndUp ? 'rounded-lg' : 'rounded-0'"
                 height="100%"
-                :max-width="$vuetify.breakpoint.mdAndUp ? '220':'100%'"
+                :max-width="$vuetify.breakpoint.mdAndUp ? '220' : '100%'"
               ></v-img>
             </div>
           </div>
@@ -438,7 +438,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue';
 import {
   mdiChevronUp,
   mdiChevronDown,
@@ -449,12 +449,12 @@ import {
   mdiAccountOutline,
   mdiTrendingUp,
   mdiHelpCircleOutline,
-} from '@mdi/js'
+} from '@mdi/js';
 
 export default {
   setup() {
-    const isCardDetailsVisible = false
-    const rating = ref(5)
+    const isCardDetailsVisible = false;
+    const rating = ref(5);
 
     return {
       isCardDetailsVisible,
@@ -472,9 +472,9 @@ export default {
         mdiTrendingUp,
         mdiHelpCircleOutline,
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>

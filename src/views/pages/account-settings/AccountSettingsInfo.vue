@@ -60,7 +60,7 @@
               outlined
               dense
               label="Country"
-              :items="['USA','UK','AUSTRALIA','BRAZIL']"
+              :items="['USA', 'UK', 'AUSTRALIA', 'BRAZIL']"
             ></v-select>
           </v-col>
 
@@ -76,7 +76,7 @@
               chips
               small-chips
               label="Languages"
-              :items="['English','Spanish','French','German']"
+              :items="['English', 'Spanish', 'French', 'German']"
             ></v-select>
           </v-col>
 
@@ -135,7 +135,7 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 export default {
   props: {
@@ -145,13 +145,13 @@ export default {
     },
   },
   setup(props) {
-    const optionsLocal = ref(JSON.parse(JSON.stringify(props.informationData)))
+    const optionsLocal = ref(JSON.parse(JSON.stringify(props.informationData)));
 
     const resetForm = () => {
-      optionsLocal.value = JSON.parse(JSON.stringify(props.informationData))
-    }
+      optionsLocal.value = JSON.parse(JSON.stringify(props.informationData));
+    };
 
-    return { optionsLocal, resetForm }
+    return { optionsLocal, resetForm };
   },
-}
+};
 </script>

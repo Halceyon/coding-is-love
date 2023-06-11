@@ -4,7 +4,7 @@
     class="vertical-nav-menu-group text--primary"
   >
     <template #prependIcon>
-      <v-icon :class="{'alternate-icon-small': !icon}">
+      <v-icon :class="{ 'alternate-icon-small': !icon }">
         {{ icon }}
       </v-icon>
     </template>
@@ -31,9 +31,9 @@ export default {
     },
   },
   setup() {
-    return {}
+    return {};
   },
-}
+};
 </script>
 
 <style lang="scss">
