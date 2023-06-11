@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - maintenance/worfklows
   pull_request:
     branches:
       - main
