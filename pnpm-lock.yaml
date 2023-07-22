@@ -73,6 +73,9 @@ devDependencies:
   happypack:
     specifier: ^5.0.1
     version: 5.0.1
+  pnpm:
+    specifier: ^8.6.9
+    version: 8.6.9
   sass:
     specifier: ~1.63.3
     version: 1.63.3
@@ -5800,6 +5803,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: true
+
+  /pnpm@8.6.9:
+    resolution: {integrity: sha512-LPEaCGvlV4dVGeJeHqi/pCR/SETooqmScv2wcr0gTqGUebpkt1w9TIEX0awLMhLO29p7pcXfz5ZO59B70Tnc0w==}
+    engines: {node: '>=16.14'}
+    hasBin: true
     dev: true
 
   /portfinder@1.0.32:
