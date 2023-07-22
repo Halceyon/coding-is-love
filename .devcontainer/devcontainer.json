@@ -6,7 +6,7 @@
   "mounts": [
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.npmrc,target=/root/.npmrc,type=bind,consistency=cached"
   ],
-  "postCreateCommand": "git fetch --all",
+  "postCreateCommand": "git config --global --add safe.directory /workspaces/coding-is-love && git fetch --all",
   "customizations": {
     "vscode": {
       "settings": {
