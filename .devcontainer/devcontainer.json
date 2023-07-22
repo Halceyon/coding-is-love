@@ -1,0 +1,66 @@
+{
+  "dockerFile": "DockerFile",
+  "runArgs": [
+    "--stop-timeout=300"
+  ],
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.npmrc,target=/root/.npmrc,type=bind,consistency=cached"
+  ],
+  "postCreateCommand": "git fetch --all",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": [
+        "Vue.volar",
+        "MisterJ.vue-volar-extention-pack",
+        "bierner.github-markdown-preview",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "codezombiech.gitignore",
+        "dbaeumer.vscode-eslint",
+        "dkundel.vscode-npm-source",
+        "donjayamanne.git-extension-pack",
+        "donjayamanne.githistory",
+        "ecmel.vscode-html-css",
+        "EditorConfig.EditorConfig",
+        "equinusocio.vsc-material-theme-icons",
+        "esbenp.prettier-vscode",
+        "fabianlauer.vs-code-xml-format",
+        "fabiospampinato.vscode-open-in-github",
+        "fnando.linter",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "fractalbrew.backticks",
+        "GitHub.codespaces",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.copilot-labs",
+        "GitHub.remotehub",
+        "GitHub.vscode-pull-request-github",
+        "idered.npm",
+        "mhutchie.git-graph",
+        "mikestead.dotenv",
+        "ms-vscode.remote-repositories",
+        "NicholasHsiang.vscode-vue2-snippets",
+        "peregrineplatform.ms-edge-launcher",
+        "PKief.material-icon-theme",
+        "redhat.vscode-yaml",
+        "sdras.vue-vscode-snippets",
+        "sibiraj-s.vscode-scss-formatter",
+        "steoates.autoimport",
+        "syler.sass-indented",
+        "traBpUkciP.vscode-npm-scripts",
+        "vincaslt.highlight-matching-tag",
+        "vscode-icons-team.vscode-icons",
+        "Vue.vscode-typescript-vue-plugin",
+        "vuetifyjs.vuetify-vscode",
+        "Wattenberger.footsteps",
+        "xabikos.JavaScriptSnippets",
+        "ziyasal.vscode-open-in-github",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
+}
