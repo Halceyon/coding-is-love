@@ -8,7 +8,7 @@ branches:
     regex: ^master$|^main$
     increment: Minor
   develop:
-    tag: ''
+    tag: 'pre-release'
     increment: Patch
     regex: develop$
     is-mainline: true

@@ -16,7 +16,7 @@
     "url": "git+https://github.com/Halceyon/coding-is-love"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -49,6 +49,7 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-vue": "^9.14.1",
     "happypack": "^5.0.1",
+    "pnpm": "^8.6.9",
     "sass": "~1.63.3",
     "sass-loader": "^13.3.2",
     "vue-cli-plugin-vuetify": "~2.5.8",

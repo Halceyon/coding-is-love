@@ -1,27 +1,68 @@
-name: Build App using PNPM
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy GitHub Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - main
-      - maintenance/workflows
+    branches: ["main"]
+
   pull_request:
     branches:
       - main
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '18'
 
+      - name: Install GitVersion
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+        uses: gittools/actions/gitversion/setup@v0
+        with:
+          versionSpec: '5.x'
+
+      - name: Determine Version
+        id:   gitversion
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+        uses: gittools/actions/gitversion/execute@v0
+        with:
+          useConfigFile: true
+          configFilePath: './gitversion.yml'
+
+      - name: Set Package Version
+        id: set_package_version
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+        run: |
+          git config --global user.email "build-server@github.com"
+          git config --global user.name "build-server"
+          echo "Setting version to: ${{ env.GitVersion_MajorMinorPatch }}"
+          npm version ${{ env.GitVersion_MajorMinorPatch }}
+          
       - name: Install PNPM
         run: |
           npm install -g pnpm
@@ -34,8 +75,20 @@ jobs:
         run: |
           pnpm build
 
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: built-app
+          name: app
           path: ./dist
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
