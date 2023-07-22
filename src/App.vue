@@ -7,6 +7,7 @@
 <script>
 import { computed } from 'vue';
 import { useRouter } from '@/utils';
+import { useSystemTheme, useVuetify } from '@/use';
 import LayoutBlank from '@/layouts/Blank.vue';
 import LayoutContent from '@/layouts/Content.vue';
 
@@ -26,6 +27,15 @@ export default {
 
       return 'layout-content';
     });
+
+    const isDarkMode = useSystemTheme();
+
+    const vuetify = useVuetify();
+
+    // Set Vuetify theme to dark if isDarkMode
+    if (isDarkMode) {
+      vuetify.theme.dark = true;
+    }
 
     return {
       resolveLayout,

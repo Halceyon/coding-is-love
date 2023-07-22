@@ -1,7 +1,7 @@
 const { mergeSassVariables } = require('@vuetify/cli-plugin-utils');
 
 module.exports = {
-  publicPath: '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/coding-is-love/' : '/',
   lintOnSave: false,
   transpileDependencies: ['vuetify'],
   chainWebpack: config => {

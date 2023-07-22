@@ -42,6 +42,4 @@ Distributed under the MIT License. See LICENSE for more information.
 
 Made with ❤️ by [@halceyon](https://github.com/Halceyon)
 
-
-
 Thanks to [themeselection](https://github.com/themeselection/materio-vuetify-vuejs-admin-template-free/tree/vue-2) for the base template 🙏
