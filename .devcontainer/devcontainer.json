@@ -7,6 +7,7 @@
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.npmrc,target=/root/.npmrc,type=bind,consistency=cached",
     "source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=/etc/gitconfig,type=bind,consistency=cached"
   ],
+  "forwardPorts": [8080],
   "postCreateCommand": "npm -g pnpm && git fetch --all",
   "customizations": {
     "vscode": {
