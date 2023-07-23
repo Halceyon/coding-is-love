@@ -14,6 +14,11 @@ const routes = [
     component: () => import('@/views/dashboard/Dashboard.vue'),
   },
   {
+    path: '/auth/callback',
+    name: 'auth-Callback',
+    component: () => import('@/views/auth/Callback.vue'),
+  },
+  {
     path: '/typography',
     name: 'typography',
     component: () => import('@/views/typography/Typography.vue'),

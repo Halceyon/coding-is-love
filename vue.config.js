@@ -1,7 +1,24 @@
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 const { mergeSassVariables } = require('@vuetify/cli-plugin-utils');
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ? '/coding-is-love/' : '/',
+  configureWebpack: {
+    plugins: [
+      new NodePolyfillPlugin(),
+    ],
+
+    // plugins: [
+    //   new BundleAnalyzerPlugin()
+    // ],
+    resolve: {
+      // ... rest of the resolve config
+      fallback: {
+        path: require.resolve('path-browserify'),
+        querystring: require.resolve('querystring-es3'),
+      },
+    },
+  },
   lintOnSave: false,
   transpileDependencies: ['vuetify'],
   chainWebpack: config => {
@@ -40,5 +57,9 @@ module.exports = {
         threads: 8,
         loaders: ['ts-loader'],
       }]);
+    // eslint-disable-next-line no-param-reassign
+    config.resolve.fallback = {
+      querystring: require.resolve('querystring-es3'),
+    };
   },
 };
